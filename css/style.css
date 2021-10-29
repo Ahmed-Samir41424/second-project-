@@ -443,7 +443,7 @@ h1 , h2 , h3 , h4 , h5 , h6 , p{
 }
 .portfolio .section-header .portfolio-list{
     padding-top: 20px;
-    display: flex;
+   display: flex;
     align-items: center;
     justify-content: center;
 }
@@ -529,9 +529,62 @@ h1 , h2 , h3 , h4 , h5 , h6 , p{
 .portfolio-content .portfolio-item:hover .overlay{
     transform: scale(1);
 }
-
-
-
+/*------------------------------------------------------------------------------------------------------*/
+/*team*/
+.team{
+    padding: 50px 0;
+    background-color: #f3f9fd;
+    height: auto;
+}
+.team-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 40px;
+    text-align: center;
+}
+.team-content .team-item{
+    background-color: #63798D;
+    transform: scale(1.1);
+}
+.team-content .team-item img{
+    max-width: 100%;
+    padding-bottom: 15px;
+    border-radius: 10px;
+    position: relative;
+}
+.team-content .team-item .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 5px;
+}
+.team-content .team-item .icon li a{
+    display: block;
+    padding: 5px 8px;
+    color: #fff;
+    font-size: 20px;
+    transition: color .5s;
+}
+.team-content .team-item .icon li a:hover{
+    color: var(--t-c);
+}
+.team-content .team-item .team-info{
+    color: #fff;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+.team-content .team-item .team-desc{
+    color: #fff;
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+/*media for team*/
+@media (max-width: 767px){
+    .team-content{
+        grid-gap: 100px;
+    }
+}
 
 
 
