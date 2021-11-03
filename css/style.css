@@ -28,7 +28,7 @@ small , span{
     margin-bottom: 3rem;
 }
 .section-header-title{
-    color: var(--m-c);
+    color: var(--f-c);
     font-size: 2.5rem;
 }
 h1 , h2 , h3 , h4 , h5 , h6 , p{
@@ -325,8 +325,11 @@ h1 , h2 , h3 , h4 , h5 , h6 , p{
 }
 /*media for about*/
 @media (max-width: 767px){
+    .about-content .about-item{
+        width: 78%;
+    }
     .about-content .about-item img{
-    width: 81%;
+    width: 100%;
    }
     .about-content .about-items .about-header .about-title{
         font-size: 40px;
@@ -585,16 +588,82 @@ h1 , h2 , h3 , h4 , h5 , h6 , p{
         grid-gap: 100px;
     }
 }
-
-
-
-
-
-
-
-
-
-
+/*------------------------------------------------------------------------------------------------------*/
+/*frequently*/
+.frequently{
+    background-color: var(--b-c);
+    padding: 30px 0;
+    height: auto;
+}
+.frequently-content{
+     display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-gap: 40px;
+}
+.frequently-content .frequently-item{
+    transition: color .3s;
+}
+.frequently-content .frequently-item .frequently-title{
+    font-size: 25px;
+    font-weight: 800;
+}
+.frequently-content .frequently-item .frequently-desc{
+    color: var(--s-c);
+}
+.frequently-content .frequently-item:hover .frequently-title{
+    color: var(--m-c)
+}
+/*media for frequently*/
+@media (max-width: 767px){
+    .frequently-content .frequently-item .frequently-title{
+        font-size: 15px;
+         width: 73%;
+    }
+     .frequently-content .frequently-item .frequently-desc{
+        font-size: 15px;
+         width: 73%;
+    }
+}
+/*------------------------------------------------------------------------------------------------------*/
+/*footer*/
+.footer{
+    padding: 30px 0;
+    height: auto;
+    background-color: #63798D; 
+}
+.footer-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    grid-gap: 30px;
+}
+.footer-item .footer-title{
+    padding-bottom: 20px;
+    color: #fff;
+}
+.footer-item .footer-title.one{
+    color: #fff;
+    font-weight: normal;
+    font-size: 24px;
+}
+.footer-desc{
+    padding-bottom: 15px;
+    color: #fff;
+}
+.footer-desc.last{
+    padding-bottom: 40px;
+}
+.footer-link li a{
+    display: block;
+    padding-bottom: 13px;
+    color: #fff;
+    transition: color .2s;
+}
+.footer-link li a i{
+    color: var(--m-c);
+}
+.footer-link li a:hover{
+    color: var(--m-c);
+}
 
 
 
